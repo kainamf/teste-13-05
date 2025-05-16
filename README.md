@@ -60,10 +60,17 @@ O número 21 é o 9º termo da sequência de Fibonacci.
 node desafio3.js
 ```
 
-Este programa analisa os dados de faturamento diário contidos no arquivo `faturamento.json` e retorna:
+Este programa analisa os dados de faturamento diário a partir de dois formatos de arquivos:
+- JSON: utilizando o arquivo `dados.json`
+- XML: utilizando o arquivo `dados (2).xml`
+
+Para cada formato, o programa calcula e exibe:
 - O menor valor de faturamento ocorrido em um dia do mês
 - O maior valor de faturamento ocorrido em um dia do mês
 - Número de dias no mês em que o valor de faturamento diário foi superior à média mensal
+- Estatísticas adicionais como número de dias com/sem faturamento
+
+A análise ignora dias sem faturamento (valor igual a zero) no cálculo da média.
 
 ### Desafio 4: Percentual de Representação por Estado
 
@@ -110,7 +117,8 @@ Este programa inverte os caracteres de uma string sem utilizar funções prontas
 
 - `desafio1.js`: Solução para o desafio 1 (cálculo da variável SOMA)
 - `desafio2.js`: Solução para o desafio 2 (sequência de Fibonacci)
-- `faturamento.json`: Dados de faturamento diário para o desafio 3
+- `dados.json`: Dados de faturamento diário em formato JSON para o desafio 3
+- `dados (2).xml`: Dados de faturamento diário em formato XML para o desafio 3
 - `desafio3.js`: Solução para o desafio 3 (análise de faturamento)
 - `desafio4.js`: Solução para o desafio 4 (percentual por estado)
 - `desafio5.js`: Solução para o desafio 5 (inversão de string)
