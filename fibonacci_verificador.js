@@ -1,8 +1,8 @@
 /**
- * Desafio 2: Sequência de Fibonacci
+ * fibonacci_verificador.js
  * 
- * Este programa verifica se um número pertence à sequência de Fibonacci
- * e exibe os termos da sequência até o número fornecido ou um limite definido.
+ * Biblioteca para análise e manipulação da sequência de Fibonacci
+ * Útil para aplicações matemáticas, criptografia, e desenvolvimento de algoritmos.
  */
 
 /**

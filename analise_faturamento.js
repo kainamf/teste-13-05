@@ -1,12 +1,14 @@
 /**
- * Desafio 3: Análise de Faturamento Diário
+ * analise_faturamento.js
  * 
- * Calcula estatísticas sobre o faturamento mensal:
- * - O menor valor de faturamento ocorrido em um dia do mês
- * - O maior valor de faturamento ocorrido em um dia do mês
- * - Número de dias no mês em que o valor de faturamento diário foi superior à média mensal
+ * Ferramenta de análise de dados financeiros com suporte a diferentes formatos.
  * 
- * Suporta dois formatos de dados:
+ * Funcionalidades:
+ * - Detecção de valores mínimos e máximos de faturamento
+ * - Cálculo de médias e identificação de dias acima da média
+ * - Visualização de tendências e padrões de faturamento
+ * 
+ * Suporta múltiplos formatos de entrada:
  * - JSON: dados.json
  * - XML: dados (2).xml
  */

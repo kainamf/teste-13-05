@@ -1,6 +1,6 @@
-# Desafios de Código em JavaScript
+# Ferramentas de Análise e Utilidades em JavaScript
 
-Este repositório contém a solução para os cinco desafios propostos, implementados em JavaScript.
+Este repositório contém um conjunto de ferramentas úteis para diversos propósitos, implementadas em JavaScript.
 
 ## Pré-requisitos
 
@@ -8,21 +8,21 @@ Este repositório contém a solução para os cinco desafios propostos, implemen
 
 ## Como executar
 
-Para executar cada desafio, basta usar o comando `node` seguido do nome do arquivo correspondente ao desafio.
+Para executar cada ferramenta, basta usar o comando `node` seguido do nome do arquivo correspondente à ferramenta.
 
-### Desafio 1: Cálculo da Variável SOMA
+### Soma Sequencial
 
 ```bash
-node desafio1.js
+node soma_sequencial.js
 ```
 
-Este programa calcula o valor final da variável SOMA após o processamento do algoritmo fornecido (soma dos números de 1 a 13).
+Esta ferramenta calcula a soma de uma sequência de números consecutivos (por padrão, soma os números de 1 a 13).
 
-### Desafio 2: Sequência de Fibonacci
+### Verificador de Fibonacci
 
-O programa verifica se um número pertence à sequência de Fibonacci e exibe informações detalhadas sobre a sequência.
+Esta ferramenta analisa números relacionados à sequência de Fibonacci, útil para aplicações matemáticas, criptográficas e de geração de padrões.
 
-#### Recursos do programa:
+#### Recursos da ferramenta:
 - Verifica se um número pertence à sequência de Fibonacci
 - Gera e exibe a sequência até o valor informado
 - Se o número pertence à sequência, informa qual termo ele é
@@ -30,16 +30,16 @@ O programa verifica se um número pertence à sequência de Fibonacci e exibe in
 
 #### Formas de execução:
 
-1. **Execução interativa** - O programa solicitará que você digite um número:
+1. **Execução interativa** - A ferramenta solicitará que você digite um número:
 
 ```bash
-node desafio2.js
+node fibonacci_verificador.js
 ```
 
 2. **Execução com valor específico** - Forneça o número diretamente como argumento:
 
 ```bash
-node desafio2.js 21
+node fibonacci_verificador.js 21
 ```
 
 #### Exemplo de resultado para o número 21:
@@ -54,33 +54,33 @@ Sequência de Fibonacci até 21:
 O número 21 é o 9º termo da sequência de Fibonacci.
 ```
 
-### Desafio 3: Análise de Faturamento Diário
+### Analisador de Faturamento
 
 ```bash
-node desafio3.js
+node analise_faturamento.js
 ```
 
-Este programa analisa os dados de faturamento diário a partir de dois formatos de arquivos:
+Esta ferramenta de análise financeira processa dados de faturamento diário a partir de diferentes formatos de arquivos:
 - JSON: utilizando o arquivo `dados.json`
 - XML: utilizando o arquivo `dados (2).xml`
 
-Para cada formato, o programa calcula e exibe:
+Para cada formato, a ferramenta calcula e exibe métricas importantes:
 - O menor valor de faturamento ocorrido em um dia do mês
 - O maior valor de faturamento ocorrido em um dia do mês
 - Número de dias no mês em que o valor de faturamento diário foi superior à média mensal
 - Estatísticas adicionais como número de dias com/sem faturamento
 
-A análise ignora dias sem faturamento (valor igual a zero) no cálculo da média.
+A análise ignora dias sem faturamento (valor igual a zero) no cálculo da média, fornecendo uma visão mais precisa do desempenho financeiro.
 
-### Desafio 4: Percentual de Representação por Estado
+### Distribuição Regional de Receitas
 
 ```bash
-node desafio4.js
+node distribuicao_regional.js
 ```
 
-Este programa calcula o percentual de representação que cada estado teve dentro do valor total mensal da distribuidora.
+Esta ferramenta calcula e visualiza a distribuição percentual de receitas por região ou estado, ideal para análises de mercado e relatórios de desempenho regional.
 
-#### Melhorias implementadas:
+#### Recursos implementados:
 - Formatação de valores monetários no padrão brasileiro (R$ X.XXX,XX)
 - Apresentação em formato de tabela para melhor visualização
 - Documentação completa do código com comentários explicativos
@@ -90,12 +90,12 @@ Este programa calcula o percentual de representação que cada estado teve dentr
 
 ```
 ==================================================
-=== PERCENTUAL DE REPRESENTAÇÃO POR ESTADO ===
+=== ANÁLISE DE DISTRIBUIÇÃO REGIONAL ===
 ==================================================
 
 Valor total de faturamento: R$ 180.759,98
 
-Detalhamento por estado:
+Detalhamento por região:
 ----------------------------------------
 | SP         |      R$ 67.836,43 |  37,53% |
 | RJ         |      R$ 36.678,66 |  20,29% |
@@ -105,21 +105,21 @@ Detalhamento por estado:
 ----------------------------------------
 ```
 
-### Desafio 5: Inversão de String
+### Inversor de Strings
 
 ```bash
-node desafio5.js
+node inversor_string.js
 ```
 
-Este programa inverte os caracteres de uma string sem utilizar funções prontas como `reverse`. A string pode ser alterada diretamente no código ou descomentando o código para entrada do usuário.
+Esta ferramenta de manipulação de texto inverte os caracteres de uma string sem utilizar funções nativas como `reverse`. Útil para transformações de texto, verificações de palíndromos e aplicações que requerem manipulação personalizada de strings.
 
 ## Estrutura do Repositório
 
-- `desafio1.js`: Solução para o desafio 1 (cálculo da variável SOMA)
-- `desafio2.js`: Solução para o desafio 2 (sequência de Fibonacci)
-- `dados.json`: Dados de faturamento diário em formato JSON para o desafio 3
-- `dados (2).xml`: Dados de faturamento diário em formato XML para o desafio 3
-- `desafio3.js`: Solução para o desafio 3 (análise de faturamento)
-- `desafio4.js`: Solução para o desafio 4 (percentual por estado)
-- `desafio5.js`: Solução para o desafio 5 (inversão de string)
-- `README.md`: Este arquivo com instruções
+- `soma_sequencial.js`: Ferramenta para cálculo de soma sequencial de números
+- `fibonacci_verificador.js`: Utilitário para análise de números na sequência de Fibonacci
+- `dados.json`: Dados de faturamento diário em formato JSON para análise
+- `dados (2).xml`: Dados de faturamento diário em formato XML para análise
+- `analise_faturamento.js`: Ferramenta de análise e estatísticas de dados financeiros
+- `distribuicao_regional.js`: Analisador de distribuição regional de receitas/vendas
+- `inversor_string.js`: Utilitário para manipulação e inversão de strings
+- `README.md`: Documentação das ferramentas e instruções de uso
